@@ -1,0 +1,73 @@
+.naturavetal_sec{
+    & span{
+        @include font-size(24px);
+    }
+    & img{
+        border: 5px solid #e9d3c7;
+    }
+    & p{
+        @include font-size(23px);
+        line-height: 43px;
+    }
+}
+&.barf-sec{
+    background: url("../images/ernahrung/barf-bg.jpg");
+    background-size:cover;
+    & h2{
+        font-family: "Futura-T-OT-Book",sans-serif;
+        color: $white-color;
+        @include font-size(36px);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    & span{
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        color: $white-color;
+        @include font-size(23px);       
+    }
+    & p{
+        @include font-size(23px);
+        line-height: 38px;
+        color: $white-color;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+    }
+}
+.philosophi-sec{
+    .philosophi-text{
+        & h3{
+            font-family: "Futura-T-OT-Book",sans-serif;
+            color: $coffee-color;
+            @include font-size(36px);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        & p{
+            font-family: "Conv_ProximaNova-Regular",sans-serif;
+            color: #42454c;
+            line-height: 40px;
+            @include font-size(23px);     
+        }
+    }
+    & hr{
+      border-top:5px solid #eeeeee;   
+      margin: 70px 0 50px 0;
+    }
+    .philosophi-second-text{
+        & h3{
+            font-family: "Futura-T-OT-Book",sans-serif;
+            color: $coffee-color;
+            @include font-size(32px);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        & p{
+            font-family: "Conv_ProximaNova-Regular",sans-serif;
+            color: #42454c;
+            line-height: 40px;
+            @include font-size(23px);     
+        }
+    }
+}

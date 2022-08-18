@@ -1,0 +1,139 @@
+.extra-small-gutter > [class*='col-'] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.extra-small-gutter.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.small-gutter > [class*='col-'] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.small-gutter.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.no-gutter.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+// margin setting
+$margins: ( 'margin-0' : 5px, 'margin-1' : 10px, 'margin-2' : 15px, 'margin-3' : 20px, 'margin-4' : 25px, 'margin-5' : 30px, 'margin-6' : 35px, 'margin-7' : 40px, 'margin-8' : 45px );
+
+@each $margin, $val in $margins {
+    .#{$margin}-top {
+        margin-top: $val;
+    }
+
+    .#{$margin}-bot {
+        margin-bottom: $val;
+    }
+
+    .#{$margin}-left {
+        margin-left: $val;
+    }
+    .#{$margin}-right {
+        margin-right: $val;
+    }
+}
+
+$paddings: ( 'pad-0' : 5px, 'pad-1' : 10px, 'pad-2' : 15px, 'pad-3' : 20px, 'pad-4' : 25px, 'pad-5' : 30px, 'pad-6' : 35px, 'pad-7' : 40px, 'pad-8' : 45px );
+
+@each $padding, $val in $paddings {
+    .#{$padding}-top {
+        padding-top: $val;
+    }
+
+    .#{$padding}-bot {
+        padding-bottom: $val;
+    }
+    .#{$padding}-left {
+        padding-left: $val;
+    }
+
+    .#{$padding}-right {
+        padding-right: $val;
+    }
+}
+
+/*----------------------------------------------*/
+/*  1.5 Helper Class
+/*----------------------------------------------*/
+
+.font-bold {
+    font-weight: 700;
+}
+
+.s-hide {
+    display: none;
+}
+
+.s-show {
+    display: block;
+}
+
+.i-block {
+    display: inline-block;
+}
+
+/* divider */
+.divider-left {
+    border-left: 1px solid #ccc;
+}
+
+.divider-right {
+    border-right: 1px solid #ccc;
+}
+
+.divider-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+/* verticle allign */
+.vertical-top {
+    vertical-align: top;
+}
+
+.vertical-bot {
+    vertical-align: bottom;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+
+/* font weight*/
+.font-weight__700 {
+    font-weight: 700;
+}
+
+.font-weight_600 {
+    font-weight: 600
+}
+.font-weight_500 {
+    font-weight: 500
+}
+.font-weight_400 {
+    font-weight: 400
+}
+
+
+.p-none {
+    padding: 0 !important;
+}
+
+.img-full {
+    width: 100%;
+}

@@ -1,0 +1,305 @@
+.newsletter_sec {
+    background: url("../images/newsletter-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .heading-s1{
+        @include font-size(42px);
+    }
+    & span{font-family: "Conv_Georgia_0",sans-serif;color: #a87656;@include font-size(20px);}
+    & .subcribe-input {
+        background: $white-color;
+        border: 1px solid #d9d9d9;
+        height: 47px;
+        @include border-radius(5px);
+
+    }
+
+    & .subscribe-btn {
+        background: #4a302b;
+        color: $white-color;
+        font-family: "Conv_Lato-Regular",sans-serif;
+        @include font-size(16px);
+        height: 47px;
+        padding: 0 20px;
+        @include border-radius(0 5px 5px 0);
+        position:relative;
+        &::after{
+            background: rgba(255,255,255,0.10);
+            content: "";
+            height: 25px;
+            @include position(absolute, $top:0,$left:0, $right:0)
+        }
+        &:hover {
+            background: #a87656;
+        }
+    }
+
+    & .input-group{
+        box-shadow: 0 5px 21px 0 rgba(0, 0, 0, 0.1);
+
+    }
+
+    @media screen and (max-width:768px) {
+        & .subscribe_text {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & .col-sm-8.margin-2-left {
+            margin-left: 0;
+        }
+    }
+}
+
+.footer-wrapper {
+    background: url("../images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top:-100px;
+
+    & .footer_botom {
+        padding: 160px 0 0 0;
+        @media screen and (min-width:1500px) {
+            padding: 210px 0 0 0;
+        }
+        @media screen and (max-width:768px) {
+            padding: 10px 0;
+        }
+
+        & .footer-title {
+            color: $white-color;
+            @include font-size(22px);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            font-weight: 600;
+            font-family: "Futura-T-OT-Book",sans-serif;
+            border-bottom: 1px solid #5e504d;
+            position:relative;
+            &::before{
+                border-bottom: 3px solid $white-color;
+                width: 30px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+            }
+            @media screen and (max-width:768px) {
+                padding: 10px 0;
+                margin-bottom: 0;
+
+                & .right-arrow {
+                    @include position(absolute, $top:10px,$right:0);
+                    height: 17px;
+                    width: 17px;
+
+                    &::after {
+                        background-image: url("../images/sprite.png");
+                        background-size: 150px;
+                        background-position: -64px -148px;
+                        width: 18px;
+                        height: 11px;
+                        content: "";
+                        display: block;
+                    }
+                }
+
+                &.active .right-arrow:after {
+                    background-position: -64px -158px;
+                }
+            }
+        }
+
+        & .footer-bottom {
+            border-top: 1px solid $gray;
+
+            & .divider-seprater {
+                position: relative;
+
+                @media screen and (min-width:768px) {
+                    &::after {
+                        border-right: 1px solid $gray;
+                        @include position(absolute, 0, 15px, 0);
+                        content: "";
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                & {
+                    padding: 20px 0 0 0;
+                }
+
+                & .col-sm-6 {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        & .separator{
+            background: url("../images/footer-separator-line.png");
+            display: inline-block;text-align: center;width: 1px;height: 100%;
+
+        }
+    }
+
+    & .footer-links {
+        & li a {
+            @include font-size(17px);
+            color: $white-color;
+            line-height: 35px;
+            padding-left: 20px;
+            font-family:"Futura-T-OT-Book",sans-serif;
+
+            &::after {
+                background: url("../images/footer-arrow.png");
+                @include position(absolute, 6px, 0, 0, 0);
+                content: "";
+                height: 10px;
+                width: 6px;
+                display: block;
+            }
+
+            &:hover {
+                border-bottom: 1px solid $white-color;
+            }
+        }
+        & .media{
+            margin-bottom: 25px;
+            & .media-left {
+                background: #a87656;
+                padding: 0;
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                @include border-radius(50px);
+                text-align: center;
+                line-height: 38px;
+            }
+
+            & .media-body {
+                @include font-size(17px);
+                width: auto;
+                line-height: 20px;
+                line-height: 30px;
+                margin-left: 10px;
+                color: $white-color;
+
+                & a {
+                    color: $white-color;
+                    &:hover {
+                        border-bottom: 1px solid $white-color;
+                    }
+                }
+            }
+        }
+        & .form-control{
+            background: rgba(153,101,89,0.5);
+            border:1px solid #786a69;
+            height: 45px;
+            color: $white-color;
+            @include border-radius(5px);
+            font-family:"Futura-T-OT-Book",sans-serif;
+
+            &::-moz-placeholder, &::-moz-placeholder{
+                color: $white-color;
+            }
+        }
+        & .submit-btn{
+            background: $white-color;
+            font-family:"Futura-T-OT-Book",sans-serif;
+            font-weight: 600;
+            @include font-size(18px);
+            color: #333333;
+            padding: 6px 25px;
+            &:hover{background: #a87656;color: $white-color;}
+        }
+    }
+
+    & .footer_address {
+        @media (max-width: 768px) {
+            margin: 20px 0;
+        }
+
+        & a {
+            color: #ccc;
+            font-size: 12px;
+            text-decoration: underline;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    & .footer-bottom {
+        & span {
+            color: $red;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+
+    & .copyright {
+        line-height: 20px;
+        border-top: 1px solid #5e504d;
+        padding: 15px 0;
+        color: #847e7c;
+        font-family:"Futura-T-OT-Book",sans-serif;
+        @include font-size(15px);
+        & ul{
+            & li{
+                display: inline-block;
+                color: #847e7c;
+                & a{
+                    color: #847e7c;
+                    font-family:"Futura-T-OT-Book",sans-serif;
+                    @include font-size(15px);
+                    &:hover{
+                        color: $white-color;
+                    }
+                }
+                &.divider{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    & .social-follow li {
+        display: inline-block;
+        padding: 0 2px;
+        & img{width: 32px;}
+    }
+}
+
+
+.goTop {
+    background-color: $coffee-color;
+    padding: 12px 9px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    z-index: 999;
+    @include position(fixed, $bottom:6%, $right: 1%);
+    @include border-radius(50px);
+    @include box-shadow(0 0 2px rgba(0,0,0,0.4));
+
+    @media (max-width: 768px) {
+        @include position(fixed, $bottom:12%);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .social-follow {
+        text-align: center;
+        padding: 0 0;
+    }
+}

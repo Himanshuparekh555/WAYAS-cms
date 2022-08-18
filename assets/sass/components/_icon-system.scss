@@ -1,0 +1,404 @@
+.sprite {
+    background-image: url($img-path + 'sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.playstore-icon {
+    background-size: 120px;
+    background-position: 0 0;
+    width: 15px;
+    height: 18px;
+}
+
+.appstore-icon {
+    background-size: 120px;
+    background-position: -15px 0;
+    width: 15px;
+    height: 19px;
+}
+
+.search-icon {
+    background-size: 130px;
+    background-position: -33px 0;
+    width: 18px;
+    height: 18px;
+}
+
+.back-arrow {
+    background-size: 150px;
+    background-position: -47px -148px;
+    width: 17px;
+    height: 20px;
+}
+
+.login-user-icon {
+    background-size: 130px;
+    background-position: -53px 0;
+    width: 18px;
+    height: 18px;
+}
+
+.clients-icon {
+    background-position: 0 -80px;
+    width: 80px;
+    height: 71px;
+}
+
+.team-icon {
+    background-position: -95px -80px;
+    width: 80px;
+    height: 71px;
+}
+
+.business-icon {
+    background-position: -197px -80px;
+    width: 80px;
+    height: 71px;
+}
+
+.viewmore-arrow {
+    background-size: 150px;
+    background-position: -140px -22px;
+    width: 12px;
+    height: 11px;
+}
+
+.portfolio_icon {
+    background-position: 4px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.mutual_icon {
+    background-position: -84px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.wealth_icon {
+    background-position: -173px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.investments_icon {
+    background-position: -262px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.sme_icon {
+    background-position: -350px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.holidays_icon {
+    background-position: -428px -165px;
+    width: 80px;
+    height: 80px;
+}
+
+.insurance_icon {
+    background-position: 7px -248px;
+    width: 80px;
+    height: 80px;
+}
+
+.startups_icon {
+    background-position: -85px -248px;
+    width: 80px;
+    height: 80px;
+}
+
+.portfolio_gray_icon {
+    background-position: -112px -163px;
+    width: 50px;
+    height: 50px;
+    background-size: 330px;
+}
+
+.mutual_gray_icon {
+    background-position: -168px -163px;
+    width: 52px;
+    height: 50px;
+    background-size: 330px;
+}
+
+.wealth_gray_icon {
+    background-position: -221px -163px;
+    background-size: 330px;
+    width: 50px;
+    height: 50px;
+}
+
+.investments_gray_icon {
+    background-position: -276px -163px;
+    background-size: 330px;
+    width: 53px;
+    height: 50px;
+}
+
+.sme_gray_icon {
+    background-position: 7px -219px;
+    background-size: 330px;
+    width: 50px;
+    height: 50px;
+}
+
+.holidays_gray_icon {
+    background-position: -54px -238px;
+    background-size: 360px;
+    width: 50px;
+    height: 37px;
+}
+
+.insurance_gray_icon {
+    background-position: -98px -219px;
+    background-size: 330px;
+    width: 50px;
+    height: 50px;
+}
+
+.startups_gray_icon {
+    background-position: -158px -219px;
+    background-size: 330px;
+    width: 54px;
+    height: 50px;
+}
+
+.explore_icon {
+    background-position: -217px -36px;
+    width: 16px;
+    height: 15px;
+    background-size: 250px;
+}
+
+.phone-icon {
+    background-position: -87px 0;
+    width: 13px;
+    height: 13px;
+    background-size: 100px;
+}
+
+.email-icon {
+    background-position: -78px -12px;
+    width: 16px;
+    height: 10px;
+    background-size: 110px;
+}
+
+.fb-follow {
+    background-position: 0 -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.tw-follow {
+    background-position: -28px -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.inst-follow {
+    background-position: -84px -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.you-follow {
+    background-position: -56px -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.link-follow {
+    background-position: -113px -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.blog-follow {
+    background-position: -141px -164px;
+    width: 27px;
+    height: 27px;
+    background-size: 200px;
+}
+
+.envelope-icon {
+    background-position: -108px 0;
+    width: 20px;
+    height: 15px;
+    background-size: 150px;
+}
+
+.back-to-top {
+    background-position: -318px -80px;
+    width: 23px;
+    height: 14px;
+}
+
+.mail-white-icon {
+    background-position: -169px -24px;
+    background-size: 235px;
+    width: 32px;
+    height: 25px;
+}
+
+.whatsaap-icon {
+    background-position: 0 -233px;
+    background-size: 235px;
+    width: 31px;
+    height: 32px;
+}
+
+.phone-white-icon {
+    background-position: -37px -233px;
+    background-size: 235px;
+    width: 31px;
+    height: 32px;
+}
+
+.calendar-icon {
+    background-position: -78px -136px;
+    background-size: 140px;
+    width: 21px;
+    height: 21px;
+}
+
+.fb-sidebar {
+    background-position: 6px -174px;
+    background-size: 150px;
+    width: 21px;
+    height: 20px;
+}
+
+.tw-sidebar {
+    background-position: -15px -174px;
+    background-size: 150px;
+    width: 21px;
+    height: 18px;
+}
+
+.ins-sidebar {
+    background-position: -38px -174px;
+    background-size: 150px;
+    width: 24px;
+    height: 20px;
+}
+
+.you-sidebar {
+    background-position: -64px -174px;
+    background-size: 150px;
+    width: 24px;
+    height: 20px;
+}
+
+.link-sidebar {
+    background-position: -89px -174px;
+    background-size: 150px;
+    width: 24px;
+    height: 20px;
+}
+/*About Us Sprite */
+.about-sprite {
+    background-image: url($img-path + 'about-sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wealth_creation_icon {
+    background-position: 5px 0;
+    width: 80px;
+    height: 80px;
+}
+
+.hni_customers_icon {
+    background-position: -80px 0;
+    width: 85px;
+    height: 80px;
+}
+
+.management_team_icon {
+    background-position: -173px 0;
+    width: 80px;
+    height: 80px;
+}
+
+.high_degree_icon {
+    background-position: -260px 0;
+    width: 80px;
+    height: 80px;
+}
+
+.highest_ethical_icon {
+    background-position: -347px 0;
+    width: 80px;
+    height: 80px;
+}
+
+.latest_trends_icon {
+    background-position: 5px -85px;
+    width: 80px;
+    height: 80px;
+}
+
+.tracking_icon {
+    background-position: -89px -85px;
+    width: 80px;
+    height: 80px;
+}
+
+.visibility_icon {
+    background-position: -183px -85px;
+    width: 80px;
+    height: 80px;
+}
+
+.relationship_icon {
+    background-position: -264px -85px;
+    width: 65px;
+    height: 80px;
+}
+
+.ensure_icon {
+    background-position: -328px -85px;
+    width: 73px;
+    height: 80px;
+}
+
+.vision-icon {
+    background-position: 0 -149px;
+    width: 66px;
+    height: 52px;
+    background-size: 350px;
+}
+
+.mision-icon {
+    background-position: -83px -149px;
+    width: 66px;
+    height: 52px;
+    background-size: 350px;
+}
+
+.objective-icon {
+    background-position: -154px -149px;
+    width: 66px;
+    height: 57px;
+    background-size: 350px;
+}
+
+.apply-arrow {
+    background-position: -261px -61px;
+    background-size: 300px;
+    width: 18px;
+    height: 16px;
+}

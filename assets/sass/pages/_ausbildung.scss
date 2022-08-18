@@ -1,0 +1,69 @@
+.hundetrainer{
+    & h1{
+        color: #4a302b;
+        font-family: "FuturaHeavy",sans-serif;
+        @include font-size(38px);
+    }
+    & span{
+        color: #42454c;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(28px);
+        line-height: 40px;
+    }
+    & p{
+        color: #42454c;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(18px);
+        line-height: 30px;
+        margin-bottom:10px;
+        & strong{
+            color: #a87656;
+            font-weight: 600;
+        }
+    }
+    & img{
+        border: 5px solid #d4a88e;
+        padding: 3px;
+    }
+}
+.shadow-programm-sec{
+    background: $gray;
+    & h3{
+        color: #4a302b;
+        font-family: "Futura-T-OT-Book",sans-serif;
+        font-weight: bold;
+        @include font-size(36px);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    & b{
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(18px);
+        line-height: 28px;
+        color: #42454c;
+        
+    }
+    & strong{
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(18px);
+        font-weight: bold;
+        color: #42454c;
+        margin: 15px 0;
+        display: block;
+    }
+    & p{
+        color: #42454c;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(18px);
+        line-height: 30px;
+        margin-bottom:20px;
+    }
+    & h5{
+        color: #2f2f2f;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        @include font-size(24px);
+        line-height: 30px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+}

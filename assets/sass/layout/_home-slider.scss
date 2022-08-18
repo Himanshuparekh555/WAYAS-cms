@@ -1,0 +1,102 @@
+
+
+/* custom control */
+
+.home-slider {
+    position:relative;
+    > ::after{
+        background: url("../images/slider/shadow.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @include position(absolute, $bottom: 0, $left:0, $right:0);
+        content: "";
+        display: block;
+        width: 100%;
+        height: 21%;
+    }
+    &.owl-theme .owl-dots {
+        @media screen and (max-width: 768px) {
+            display: none !important;
+        }
+
+        text-align: center;
+        @include position(absolute, $bottom: 20px);
+        width: 100%;
+    }
+
+    & .home-slider__item {
+        position: relative;
+        & .slider-text{
+            @include position(absolute, $top: 30px,$left: 0, $right:0);
+            display: table;margin: auto;
+            color: $white-color;
+            @include font-size(49px);
+            text-transform: uppercase;
+            line-height:55px;
+            & b{
+                font-family: "FuturaHeavy",sans-serif;      
+            }
+            & span{
+                font-family: "Futura-T-OT-Book",sans-serif;
+            }
+            & button{
+                font-family: "Futura-T-OT-Book",sans-serif;
+                @include border-radius(0);
+                box-shadow: 5px 1px 7px rgba(0, 0, 0, 0.8);
+                @include font-size(22px);
+                position: relative;
+                padding: 6px 60px;
+                font-size: 20px;
+                background: #d4a88e;
+                color: $white-color;
+                -ms-transform: skew(-10deg, 0deg);
+                -webkit-transform: skew(-10deg, 0deg);
+                transform: skew(-10deg, 0deg);
+                overflow:hidden;
+                font-weight:600;
+                &::before{
+                    @include position(absolute, $top: 10px, $left: 0);
+                    content: " ";
+                    display: block;
+                    width: 25px;
+                    height: 20px;
+                    background: #d4a88e;
+                    -ms-transform: skew(-10deg, 0deg);
+                    -webkit-transform: skew(-10deg, 0deg);
+                    transform: skew(-10deg, 0deg);
+                }
+                &::after{
+                    @include position(absolute, $top: 10px, $left: 0);
+                    content: " ";
+                    display: block;
+                    width: 25px;
+                    height: 20px;
+                    border:6px solid $coffee-color;
+                    border-left: 0;
+                    -ms-transform: skew(-10deg, 0deg);
+                    -webkit-transform: skew(-10deg, 0deg);
+                    transform: skew(-10deg, 0deg);
+                }
+            }
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    & .owl-nav{
+         @include position(absolute, $top: 35%, $left: 0,$right: 0);
+         & .owl-prev{
+             @include position(absolute,$left: 30px);
+             background: url("../images/slider/prev.png") !important;
+             width: 37px;height: 73px;
+             text-indent: -9999px;
+         }
+         & .owl-next{
+             @include position(absolute,$right: 30px);
+             background: url("../images/slider/next.png") !important;
+             width: 37px;height: 73px;
+             text-indent: -9999px;
+         }
+    }
+}

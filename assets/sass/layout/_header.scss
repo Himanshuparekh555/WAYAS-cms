@@ -1,0 +1,46 @@
+a,a:hover, button {
+    @include transition(all 0.3s ease);
+    text-decoration: none;
+}
+.header-top{
+    background-color: $light-pink;
+    & ul{
+        & li{
+            display: inline-block;
+            vertical-align: middle;
+            & a{
+                color: $black-color;
+                @include font-size(22px);
+                font-family: "Futura-T-OT-Book",sans-serif;
+            }
+            &.top-social{
+                border-left: 1px solid #e2c4b4;
+                border-right: 1px solid #e2c4b4;
+                padding:4px 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.header-middle {
+    padding: 15px 0;
+
+    @include media-mobile {
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid #e5e5e5;
+        & .brand-logo img{
+            width:200px;
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        padding: 7px 0 7px 0;
+    }
+    & .brand-logo{
+        display: block;
+        margin-top: -40px;
+    }
+}
+
+

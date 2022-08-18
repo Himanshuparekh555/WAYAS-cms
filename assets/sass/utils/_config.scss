@@ -1,0 +1,52 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Family
+$primary-font: 'Maven Pro', sans-serif;
+$heading-font: 'Maven Pro', sans-serif;
+
+// Font Weights
+$font-weight--heading  : 500;
+
+// Text
+$placeholder-color : #333333;
+$placeholder-color--focus : #666666;
+$base__font-size : 16px;
+$base__line      : 24px;
+
+// Store path
+$img-path : "../images/";
+$font-path : "../fonts/";
+
+// Site Color Scheme
+$pink-color: #d4a88e;
+$light-pink: #e9d3c7;
+$coffee-color: #492f2a;
+$light-coffee-color: #a6714f;
+$coffee-text: #63321d;
+$gray: #e6e6e6;
+
+$primary-color : #A6001A;
+$second-color : #372794;
+$green-color: #018190;
+$blue-color : #372794;
+$menu-bg       : #B3812A;
+$black-color : #343741;
+$white-color : #ffffff;
+$footer-bottom :#1e1551;
+$red : #ED3237;
+
+$light-gray: #f0f0f0;
+$drak-gray: #ebebeb;
+$btn_color: #C91D21;
+@mixin media-mobile {
+    @media screen and (max-width : 980px) {
+        @content;
+    }
+}
+@mixin media-desktop {
+    @media screen and (min-width : 981px) {
+        @content;
+    }	
+}

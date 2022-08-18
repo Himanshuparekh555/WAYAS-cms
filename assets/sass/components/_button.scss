@@ -1,0 +1,36 @@
+button {
+    @include transition(all 0.3s ease-in-out);
+    @include border-radius(0);
+}
+
+.ommit-radius {
+    @include border-radius(0);
+}
+
+
+%btn-comman {
+    @include font-size(15px);
+    color: #fff;
+    line-height: 28px;
+}
+
+.btn-s1 {
+    width: 100%;
+    @extend %btn-comman;
+}
+
+.btn-s2 {
+    @extend %btn-comman;
+}
+
+$btn-colors: ( red : $primary-color, green : #529239, gray : $gray, dark-gray : $drak-gray );
+
+@each $btn-name, $btn-color in $btn-colors {
+    .btn-#{$btn-name} {
+        background-color: $btn-color;
+
+        &:hover {
+            background-color: darken($btn-color,8%);
+        }
+    }
+}

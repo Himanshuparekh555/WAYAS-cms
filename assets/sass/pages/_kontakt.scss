@@ -1,0 +1,90 @@
+.kontakt-sec{
+    & strong{
+        @include font-size(22px);
+        line-height: 35px;
+        color: #42454c;
+        display: block;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+    & p{
+        @include font-size(22px);
+        line-height: 30px;
+        color: #42454c;
+        font-family: "Conv_ProximaNova-Regular",sans-serif;
+        margin-bottom:20px;
+    }
+    & .title{
+        font-family: "Futura-T-OT-Book",sans-serif;
+        color: #4a302b;
+        @include font-size(28px);
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    & .comments{
+        min-height: 166px;
+        padding: 10px 30px;
+        resize: none;
+    }
+    & .contactinfo-sec{
+        & .contactinfo{
+            font-family: "Futura-T-OT-Book",sans-serif;
+            color: #4a302b;
+            @include font-size(28px);
+            line-height: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            position: relative;
+            &::after{
+                border-bottom:3px solid #b08467;
+                @include position(absolute, $bottom: 0, $left: 0);
+                content: "";width: 53px;
+            }
+        }
+        & .media{
+            margin-top:20px;
+            & .media-left{
+                background: #a87656;
+                padding: 0;
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                @include border-radius(50px);
+                text-align: center;
+                line-height: 38px;
+            }
+            & .media-body {
+                font-family: "Conv_ProximaNovaSoft-Semibold",sans-serif;
+                @include font-size(17px);
+                width: auto;
+                line-height: 30px;
+                margin-left: 20px;
+                color: #595959;
+
+                & a {
+                    color: #595959;
+                    &:hover {
+                        border-bottom: 1px solid #595959;
+                    }
+                }
+                &.underline{
+                    text-decoration: underline;
+                }
+            }            
+        }
+    }
+    & .divider-line{
+        position:relative;
+        &::after{
+            background: url("../images/divider-line.png");
+            @include position(absolute, $bottom: 0, $right: 0);
+            content: "";width: 1px;height: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+}
